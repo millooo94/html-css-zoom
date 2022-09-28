@@ -32,17 +32,48 @@ header {
 }
 
 main {
+    margin-top: 65px;
+    /* padding: 3em; */
     height: calc(100vh - 65px - 65px);
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1em;
     overflow-y: auto;
     background-color: yellow;
 }
 
-main img {
-    max-width: calc((100% / 7) - 1rem);
+.main-pic > img {
+    width: 100%;
+
 }
+
+.main-pic {
+    flex-basis: calc(100% / 7 - 6em / 7)
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+main img {
+    flex-basis: calc((100% / 7) - (6em / 7));
+    flex-basis: calc(100% / 3 - 1em * 6);
+} */
+
+
+
+
+
+
+
+
 
 
 footer {
@@ -52,4 +83,19 @@ footer {
     right: 0;
     left: 0;
     background-color: red;
+}
+
+.footer-microphone {
+    height: 65px;
+}
+
+
+.footer-microphone-link {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
