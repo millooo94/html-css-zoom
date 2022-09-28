@@ -19,6 +19,20 @@ body {
     max-width: 900px;
 }
 
+.text {
+    font-size: 0.67em;
+    font-weight: 500;
+    color: white;
+}
+
+a {
+    height: 100%;
+}
+
+.footer-content-part:hover span {
+    text-decoration: underline;
+}
+
 
 /* Header */
 
@@ -28,19 +42,57 @@ header {
     top:0;
     right: 0;
     left: 0;
-    background-color: orange;
+    background-color: black;
+
 }
+
+.header-tags {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: .5em;
+}
+
+.header-tag-large {
+    display: flex;
+    align-items: center;
+    background-color: #4a4a4a;
+    margin-right: .3em;
+    padding: .2em;
+    border-radius: 10%;
+}
+
+.maximize {
+    margin-right: .2em;
+}
+
+
+.header-tags > i {
+    height: fit-content;
+    background-color: #4a4a4a;
+    padding: .35em;
+    border-radius: 10%;
+}
+
+.header-tags > span {
+    background-color: #4a4a4a;
+}
+
+
+
+
+
 
 main {
     margin-top: 65px;
-    /* padding: 3em; */
+    padding: 0 70px 20px 70px;
     height: calc(100vh - 65px - 65px);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1em;
+    row-gap: .5em;
+    column-gap: 0.4em;
     overflow-y: auto;
-    background-color: yellow;
+    background-color: black;
 }
 
 .main-pic > img {
@@ -49,7 +101,7 @@ main {
 }
 
 .main-pic {
-    flex-basis: calc(100% / 7 - 6em / 7)
+    flex-basis: calc(100% / 7 - 2.4em / 7)
 }
 
 
@@ -82,20 +134,81 @@ footer {
     bottom:0;
     right: 0;
     left: 0;
-    background-color: red;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding-left: .5em;
 }
 
-.footer-microphone {
-    height: 65px;
+
+
+
+.footer-icon{
+    margin-right: .4em;
+
 }
 
+.footer-icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
 
-.footer-microphone-link {
-    width: fit-content;
+.footer-content-part {
     height: 100%;
     display: flex;
-    flex-direction:column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    margin-right: .5em;
+}
+
+
+
+.footer-right-content {
+    display: flex;
+}
+
+.footer-center-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left-content {
+    display: flex;
+    align-items: center;
+    background-color: #4a4a4a;
+}
+
+a > i {
+    font-size: 1.5em;
+}
+
+.footer-content-part > i {
+    margin-left: .9em ;
+    font-size: .6em;
+    font-weight: bolder;
+}
+
+a > span {
+    margin-top: .6em;
+}
+
+
+#chat {
+    margin-left: .7em;
+}
+
+.footer-left-content > a {
+    display: flex;
+    align-items: center;
+    padding: 2em;
     text-decoration: none;
+    font-weight: 600;
+    color: red;
+}
+
+.footer-left-content > span {
+   
 }
