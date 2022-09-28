@@ -6,4 +6,50 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+/* General Styles */
+
+.container {
+    max-width: 900px;
+}
+
+
+/* Header */
+
+header {
+    height: 65px;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    background-color: orange;
+}
+
+main {
+    height: calc(100vh - 65px - 65px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow-y: auto;
+    background-color: yellow;
+}
+
+main img {
+    max-width: calc((100% / 7) - 1rem);
+}
+
+
+footer {
+    height: 65px;
+    position: fixed;
+    bottom:0;
+    right: 0;
+    left: 0;
+    background-color: red;
 }
